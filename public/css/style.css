@@ -1,0 +1,28 @@
+@font-face {
+    font-family: nunito;
+    src: url('/font/Nunito-bold.ttf');
+}
+
+* {
+    font-family: nunito;
+    /* outline: 1px solid red; */
+}
+
+
+/* === FONT SIZING === */
+
+.font-xs {
+    font-size: small;
+}
+
+
+/* === NAVBAR PROPERTY === */
+
+.navbar-active {
+    border-bottom: 3px solid #2472AF;
+    color: #2472AF;
+}
+
+.navbar-active > a {
+    color: #2472AF;
+}
