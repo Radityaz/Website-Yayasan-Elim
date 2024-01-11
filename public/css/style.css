@@ -5,16 +5,28 @@
 
 * {
     font-family: nunito;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 
 /* === FONT SIZING === */
 
-.font-xs {
+.font-s {
     font-size: small;
 }
 
+.font-xxs {
+    font-size: xx-small;
+}
+
+.font-hero {
+    font-size: 53px;
+}
+
+.bg-primary {
+    background-color: #2472AF;
+    color: white;
+}
 
 /* === NAVBAR PROPERTY === */
 
@@ -25,4 +37,15 @@
 
 .navbar-active > a {
     color: #2472AF;
+}
+
+
+/* === ONE TIME USE === */
+.background-photo {
+    background-image: url('');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 124, 214, 0.39) 0%, rgba(0, 124, 214, 0.39) 100%), url('/image/TogetherBackground.png'), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
