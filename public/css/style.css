@@ -1,12 +1,24 @@
 @font-face {
     font-family: nunito;
-    src: url('/font/Nunito-bold.ttf');
+    src: url('/font/Nunito-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: nunito-bold;
+    src: url('/font/Nunito-Bold.ttf');
+    font-weight: bold;
 }
 
 * {
-    font-family: nunito;
-    outline: 1px solid red;
+    font-family: nunito-bold;
+    /* outline: 1px solid red; */
 }
+
+body, nav {
+    background-color: #EDF6FF;
+}
+
 
 
 /* === FONT SIZING === */
@@ -19,8 +31,13 @@
     font-size: xx-small;
 }
 
+.font-xs {
+    font-size: x-small;
+}
+
+
 .font-hero {
-    font-size: 53px;
+    font-size: 66px;
 }
 
 .bg-primary {
@@ -47,5 +64,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
 
 }

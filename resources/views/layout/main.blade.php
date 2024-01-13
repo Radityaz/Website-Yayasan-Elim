@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand p-0 " href="/">
             <img class="p-0 m-0" src="/image/logo.png"  width=60" height="55">
