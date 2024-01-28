@@ -12,7 +12,7 @@
 
 * {
     font-family: nunito-bold;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;  
 }
 
 body, nav {
@@ -40,31 +40,53 @@ body, nav {
     font-size: 66px;
 }
 
-.bg-primary {
-    background-color: #2472AF;
+.bgs-primary {
+    background-color: #174780;
     color: white;
 }
+
+.texts-primary {
+    color: #174780;
+}
+
 
 /* === NAVBAR PROPERTY === */
 
 .navbar-active {
-    border-bottom: 3px solid #2472AF;
-    color: #2472AF;
+    border-bottom: 3px solid #2252AB;
+    color: #2252AB;
 }
 
 .navbar-active > a {
-    color: #2472AF;
+    color: #2252AB;
 }
 
 
 /* === ONE TIME USE === */
 .background-photo {
-    background-image: url('');
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 124, 214, 0.39) 0%, rgba(0, 124, 214, 0.39) 100%), url('/image/TogetherBackground.png'), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 124, 214, 0.39) 0%, rgba(0, 124, 214, 0.39) 100%), url('/image/TogetherBackground.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
     align-items: center;
 
+}
+
+.image-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.front-background {
+    background: url('/image/frontview.png'), lightgray 0px 0px / 100% 100% no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.back-background {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.16) 100%), url('/image/backview.png'), lightgray 0px 0px / 100% 109.492% no-repeat;
+    background-position: center;
+    background-size: cover;
 }

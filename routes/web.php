@@ -31,3 +31,15 @@ Route::get('/about', function () {
 Route::get('/article', function () {
     return view('layout.content.article');
 });
+
+Route::get('/sd', function () {
+    return view('layout.content.sdwidyakirana');
+});
+
+Route::get('/kb', function () {
+    return view('layout.content.kbfirdaus');
+});
+
+Route::get('/tpa', function () {
+    return view('layout.content.tpamoms');
+});
