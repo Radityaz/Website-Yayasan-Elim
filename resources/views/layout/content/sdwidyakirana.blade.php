@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('content')
-    <div class="container-fluid background-photo d-flex flex-column text-light vh-100 mb-5" >
+    <div class="container-fluid background-sd-photo d-flex flex-column text-light vh-100 mb-5" >
         <img height="200px" src="/image/sdwidya.png" alt="" srcset="">
         <h1 class="display-1" >
             SD Widya Kirana

@@ -12,7 +12,7 @@
 
 * {
     font-family: nunito-bold;
-    outline: 1px solid red;  
+    /* outline: 1px solid red;   */
 }
 
 body, nav {
@@ -57,6 +57,11 @@ body, nav {
     color: #2252AB;
 }
 
+.navbar-nonactive {
+    border-bottom: transparent;
+    color: black;
+}
+
 .navbar-active > a {
     color: #2252AB;
 }
@@ -85,8 +90,44 @@ body, nav {
     background-size: cover;
 }
 
+.front-kb-background {
+    background: url('/image/image-kb-1.png');
+    background-position: -265px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
 .back-background {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.16) 100%), url('/image/backview.png'), lightgray 0px 0px / 100% 109.492% no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.background-sd-photo {
+    background: linear-gradient(0deg, rgba(1, 104, 185, 0.43) 0%, rgba(1, 104, 185, 0.43) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/image-sd-background.png"), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-tpa-photo {
+    background: linear-gradient(0deg, rgba(1, 104, 185, 0.43) 0%, rgba(1, 104, 185, 0.43) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(""), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.background-kb-photo {
+    background: linear-gradient(0deg, rgba(1, 104, 185, 0.23) 0%, rgba(1, 104, 185, 0.23) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/image-kb-1.png"), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
 }

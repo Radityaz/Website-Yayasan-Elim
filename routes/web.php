@@ -21,25 +21,49 @@ use App\Http\Controllers\LayoutController;
 
 
 Route::get('/', function () {
-    return view('layout.content.home');
+
+    $page = 'home';
+    $navcontent = '';
+
+    return view('layout.content.home', compact('page', 'navcontent'));
 });
 
 Route::get('/about', function () {
-    return view('layout.content.about');
+
+    $page = 'about';
+    $navcontent = 'About';
+
+    return view('layout.content.about', compact('page','navcontent'));
 });
 
 Route::get('/article', function () {
-    return view('layout.content.article');
+
+    $page = 'article';
+    $navcontent = 'Artikel';
+
+    return view('layout.content.article', compact('page','navcontent'));
 });
 
 Route::get('/sd', function () {
-    return view('layout.content.sdwidyakirana');
+
+    $page = 'place';
+    $navcontent = 'SD Widya Kirana';
+
+    return view('layout.content.sdwidyakirana', compact('page','navcontent'));
 });
 
 Route::get('/kb', function () {
-    return view('layout.content.kbfirdaus');
+
+    $page = 'place';
+    $navcontent = 'KB Firdaus';
+    
+    return view('layout.content.kbfirdaus', compact('page','navcontent'));
 });
 
 Route::get('/tpa', function () {
-    return view('layout.content.tpamoms');
+
+    $page = 'place';
+    $navcontent = "TPA Mom's Care";
+
+    return view('layout.content.tpamoms', compact('page','navcontent'));
 });

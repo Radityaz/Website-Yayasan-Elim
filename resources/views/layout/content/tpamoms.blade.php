@@ -1,9 +1,9 @@
 @extends('layout.main')
 @section('content')
-    <div class="container-fluid background-photo d-flex flex-column text-light vh-100 mb-5" >
-        <img height="200px" src="/image/sdwidya.png" alt="" srcset="">
+    <div class="container-fluid background-tpa-photo d-flex flex-column text-light vh-100 mb-5" >
+        <img height="200px" src="/image/tpa.png" alt="" srcset="">
         <h1 class="display-1" >
-            SD Widya Kirana
+            TPA Mom's Care
         </h1>
         <p class="w-25 text-center font-s" style="font-family: nunito"  >
             Berikut adalah galeri kegiatan kami
@@ -67,14 +67,14 @@
                 </div>
             </div>
             <div class="col-6 d-flex align-items-center justify-content-center">
-                <img height="650px" src="/image/image-sd-1.png" alt="" srcset="">
+                <img height="650px" src="/image/image-tpa-1.png" alt="" srcset="">
             </div>
         </div>
     </section>
     <section class="container overflow-hidden " style="margin-top: 5% ; margin-bottom: 5% " >
         <div class="row" >
             <div class="col-6 px-5 d-flex align-items-center justify-content-start">
-                <img class="" height="550px" src="/image/image-sd-2.png" alt="" srcset="">
+                <img class="" height="550px" src="/image/image-tpa-background.png" alt="" srcset="">
             </div>
             <div class="col-6 d-flex flex-column align-items-start justify-content-end">
                 <div class="box mt-5 p-5 h-100 w-100" style="background-color: #c4e2ff" >

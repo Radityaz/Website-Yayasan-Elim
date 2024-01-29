@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,23 +17,23 @@
           </a>
           <div class="collapse navbar-collapse " id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
-              <li class="nav-item navbar-active">
+              <li class="nav-item {{ $page == "home" ? 'navbar-active' : 'navbar-nonactive'; }} ">
                 <a class="nav-link font-s hover-grow" href="/">Beranda</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ $page == "about" ? 'navbar-active' : 'navbar-nonactive'; }} ">
                 <a class="nav-link font-s " href="/about">Tentang Kami</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ $page == "article" ? 'navbar-active' : 'navbar-nonactive'; }} " >
                 <a class="nav-link font-s " href="/article">Artikel</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link font-s  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown {{ $page == "place" ? 'navbar-active' : 'navbar-nonactive'; }} ">
+                <a class="nav-link font-s  dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Tempat
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/sd">SD Widya Kirana</a></li>
-                  <li><a class="dropdown-item" href="/kb">KB Firdaus</a></li>
-                  <li><a class="dropdown-item" href="/tpa">TPA</a></li>
+                  <li><a class="dropdown-item {{ $navcontent == "SD Widya Kirana" ? 'bgs-primary' : ''; }}  " href="/sd">SD Widya Kirana</a></li>
+                  <li><a class="dropdown-item {{ $navcontent == "KB Firdaus" ? 'bgs-primary' : ''; }} " href="/kb">KB Firdaus</a></li>
+                  <li><a class="dropdown-item {{ $navcontent == "TPA Mom's Care" ? 'bgs-primary' : ''; }} " href="/tpa">TPA</a></li>
                 </ul>
               </li>
             </ul>
@@ -41,11 +41,11 @@
         </div>
       </nav>
 
-      <div class="container-fluid bg-light d-flex justify-content-center align-items-center" style="margin: 100px 0px 10px 0px; height: 60px " >
+      <div class="container-fluid bg-light {{ strlen($navcontent) > 0 ? "d-flex" : "d-none" }} justify-content-center align-items-center" style="margin: 100px 0px 10px 0px; height: 60px " >
         <h6 class="p-0 m-0" >
             <span class="texts-primary" >Home</span>
             |
-            <span>Artikel</span>
+            <span>{{ $navcontent }}</span>
         </h6>
     </div>
 
@@ -87,17 +87,17 @@
               </h6>
             </div>
             <div class="d-flex align-items-start justify-content-start w-100 my-2" >
-              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
+              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="/sd" style="font-family: nunito"  >
                 Tentang Sd
               </a>
             </div>
             <div class="d-flex align-items-start justify-content-start w-100 my-2" >
-              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
+              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="/kb" style="font-family: nunito"  >
                 Tentang KB
               </a>
             </div>
             <div class="d-flex align-items-start justify-content-start w-100 my-2" >
-              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
+              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="/tpa" style="font-family: nunito"  >
                 Tentang tpa
               </a>
             </div>

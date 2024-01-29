@@ -40,7 +40,7 @@
                         <div class="col-10 p-0 ps-3 d-flex flex-column justify-content-center ">
                             <h5 class="p-0 m-0" >SD</h5>
                             <p class="py-1 font-xs p-0 m-0" >Sekolah SD Widya Kirana Kudus</p>
-                            <a class="font-xxs text-decoration-none" href="">Selengkapnya</a>
+                            <a class="font-xxs text-decoration-none" href="/sd">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="row shadow-sm bg-light h-25 p-3 m-0" style="border-radius: 6px;"  >
@@ -50,7 +50,7 @@
                         <div class="col-10 p-0 ps-3 d-flex flex-column justify-content-center ">
                             <h5 class="p-0 m-0" >KB</h5>
                             <p class="py-1 font-xs p-0 m-0" >Sekolah KB Firdaus Kudus</p>
-                            <a class="font-xxs text-decoration-none" href="#">Selengkapnya</a>
+                            <a class="font-xxs text-decoration-none" href="/kb">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="row shadow-sm bg-light h-25 p-3 m-0" style="border-radius: 6px;"  >
@@ -60,7 +60,7 @@
                         <div class="col-10 p-0 ps-3 d-flex flex-column justify-content-center ">
                             <h5 class="p-0 m-0" >TPA</h5>
                             <p class="py-1 font-xs p-0 m-0" >Sekolah TPA Moms Care Kudus</p>
-                            <a class="font-xxs text-decoration-none" href="#">Selengkapnya</a>
+                            <a class="font-xxs text-decoration-none" href="/tpa">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -128,11 +128,11 @@
         <p style="font-family: nunito" >Sekolah kami menjalin kerjasama dengan beberapa instansi dalam berbagai bidang</p>
         <div class="box w-50  d-flex justify-content-between">
             <img height="80px" src="/image/sdwidya.png" alt="" srcset="">
-            <img height="80px" src="/image/sdwidya.png" alt="" srcset="">
-            <img height="80px" src="/image/sdwidya.png" alt="" srcset="">
-            <img height="80px" src="/image/sdwidya.png" alt="" srcset="">
-            <img height="80px" src="/image/sdwidya.png" alt="" srcset="">
-            <img height="80px" src="/image/sdwidya.png" alt="" srcset="">
+            <img height="80px" src="/image/kbfirdaus.png" alt="" srcset="">
+            <img height="80px" src="/image/tpa.png" alt="" srcset="">
+            <img height="80px" src="/image/oakbridge.png" alt="" srcset="">
+            <img height="80px" src="/image/bright.png" alt="" srcset="">
+            <img height="80px" src="/image/smk.png" alt="" srcset="">
 
         </div>
     </div>
