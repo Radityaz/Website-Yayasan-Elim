@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
     <div class="container">
-        <form action="/addarticle" method="POST" enctype="multipart/form-data">
+        <form action="/create" method="POST" enctype="multipart/form-data">
             @csrf
             <label for="title">Title</label>
             <input id="title" name="title" type="text">

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Article_Controller;
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LayoutController;
@@ -79,4 +79,4 @@ Route::get('/tpa', function () {
 });
 
 
-Route::post('/addarticle', [Article_Controller::class, 'add'])->name("addarticle.add");
+Route::post('/create', [ArticleController::class, 'add']);
