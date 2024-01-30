@@ -12,7 +12,7 @@
 
 * {
     font-family: nunito-bold;
-    /* outline: 1px solid red;   */
+    outline: 1px solid red;  
 }
 
 body, nav {
@@ -25,6 +25,10 @@ body, nav {
 
 .font-s {
     font-size: small;
+}
+
+.font-m {
+    font-size: 15px;
 }
 
 .font-xxs {
@@ -129,5 +133,4 @@ body, nav {
     background-size: cover;
     justify-content: center;
     align-items: center;
-}
 }
