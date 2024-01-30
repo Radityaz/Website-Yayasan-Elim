@@ -23,6 +23,9 @@ class ArticleController extends Controller
 
         $DateNow = Carbon::now();
 
+        $file_name = $request->image->getClientOriginalName();
+        $image = $request->image->storeAs('image', $file_name,'public');
+
         // $request->validate([
         //     'title' => 'required|string|max:100',
         //     'author' => 'required|string|max:100',
@@ -34,14 +37,11 @@ class ArticleController extends Controller
         $data = new Articletable;
         $data->title = $request->title;
         $data->author = $request->author;
+        $data->image = $image;
         $data->content = $request->content;
         $data->date = $DateNow->format('d F Y');
 
 
-        // if ($request->hasFile('image')) {
-        //     $imagePath = $request->file('image')->store('public/images');
-        //     $data->image = basename($imagePath);
-        // }
     
         $data->save();
     
