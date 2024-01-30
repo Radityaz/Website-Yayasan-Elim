@@ -12,9 +12,6 @@
             <label for="image">image</label>
             <input id="image" name="image" type="file">
 
-            <label for="description">description</label>
-            <input id="description" name="description" type="text">
-
             <label for="content">content</label>
             <input id="content" name="content" type="text">
 

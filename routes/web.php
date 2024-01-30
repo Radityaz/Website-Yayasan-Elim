@@ -46,13 +46,7 @@ Route::get('/about', function () {
     return view('layout.content.about', compact('page','navcontent'));
 });
 
-Route::get('/article', function () {
-
-    $page = 'article';
-    $navcontent = 'Artikel';
-
-    return view('layout.content.article', compact('page','navcontent'));
-});
+Route::get('/article', [ArticleController::class, 'index']);
 
 Route::get('/sd', function () {
 
