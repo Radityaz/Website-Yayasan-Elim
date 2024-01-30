@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Article_Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LayoutController;
@@ -27,6 +28,15 @@ Route::get('/', function () {
 
     return view('layout.content.home', compact('page', 'navcontent'));
 });
+
+Route::get('/add', function () {
+
+    $page = '';
+    $navcontent = 'Tambah Data';
+
+    return view('layout.content.add', compact('page','navcontent'));
+});
+
 
 Route::get('/about', function () {
 
@@ -67,3 +77,6 @@ Route::get('/tpa', function () {
 
     return view('layout.content.tpamoms', compact('page','navcontent'));
 });
+
+
+Route::post('/addarticle', [Article_Controller::class, 'add'])->name("addarticle.add");
