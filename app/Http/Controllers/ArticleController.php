@@ -49,4 +49,6 @@ class ArticleController extends Controller
         return redirect('/add')->with('success', 'Data berhasil ditambahkan!');
 
     }
+
+
 }

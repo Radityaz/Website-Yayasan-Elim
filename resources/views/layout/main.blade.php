@@ -10,42 +10,58 @@
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand p-0 " href="/">
-            <img class="p-0 m-0" src="/image/logo.png"  width=60" height="55">
-          </a>
-          <div class="collapse navbar-collapse " id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item {{ $page == "home" ? 'navbar-active' : 'navbar-nonactive'; }} ">
-                <a class="nav-link font-s hover-grow" href="/">Beranda</a>
-              </li>
-              <li class="nav-item {{ $page == "about" ? 'navbar-active' : 'navbar-nonactive'; }} ">
-                <a class="nav-link font-s " href="/about">Tentang Kami</a>
-              </li>
-              <li class="nav-item {{ $page == "article" ? 'navbar-active' : 'navbar-nonactive'; }} " >
-                <a class="nav-link font-s " href="/article">Artikel</a>
-              </li>
-              <li class="nav-item dropdown {{ $page == "place" ? 'navbar-active' : 'navbar-nonactive'; }} ">
-                <a class="nav-link font-s  dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tempat
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item {{ $navcontent == "SD Widya Kirana" ? 'bgs-primary' : ''; }}  " href="/sd">SD Widya Kirana</a></li>
-                  <li><a class="dropdown-item {{ $navcontent == "KB Firdaus" ? 'bgs-primary' : ''; }} " href="/kb">KB Firdaus</a></li>
-                  <li><a class="dropdown-item {{ $navcontent == "TPA Mom's Care" ? 'bgs-primary' : ''; }} " href="/tpa">TPA</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
+  @if ($page != 'articledetail')
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand p-0 " href="/">
+          <img class="p-0 m-0" src="/image/logo.png"  width=60" height="55">
+        </a>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item {{ $page == "home" ? 'navbar-active' : 'navbar-jnonactive'; }} ">
+              <a class="nav-link font-s hover-grow" href="/">Beranda</a>
+            </li>
+            <li class="nav-item {{ $page == "about" ? 'navbar-active' : 'navbar-nonactive'; }} ">
+              <a class="nav-link font-s " href="/about">Tentang Kami</a>
+            </li>
+            <li class="nav-item {{ $page == "article" ? 'navbar-active' : 'navbar-nonactive'; }} " >
+              <a class="nav-link font-s " href="/article">Artikel</a>
+            </li>
+            <li class="nav-item dropdown {{ $page == "place" ? 'navbar-active' : 'navbar-nonactive'; }} ">
+              <a class="nav-link font-s  dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tempat
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item {{ $navcontent == "SD Widya Kirana" ? 'bgs-primary' : ''; }}  " href="/sd">SD Widya Kirana</a></li>
+                <li><a class="dropdown-item {{ $navcontent == "KB Firdaus" ? 'bgs-primary' : ''; }} " href="/kb">KB Firdaus</a></li>
+                <li><a class="dropdown-item {{ $navcontent == "TPA Mom's Care" ? 'bgs-primary' : ''; }} " href="/tpa">TPA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  @else
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand p-0 " href="/article">
+          <img class="p-0 m-0" src="/image/back.png"  width="30">
+        </a>
+        <div class="collapse navbar-collapse justify-content-center text-black" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item {{ $page == "home" ? 'navbar-active' : 'navbar-jnonactive'; }} ">
+              <a class="nav-link" style="color: black" >{{ $article->title }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  @endif
+      
       <div class="container-fluid bg-light {{ strlen($navcontent) > 0 ? "d-flex" : "d-none" }} justify-content-center align-items-center" style="margin: 100px 0px 10px 0px; height: 60px " >
         <h6 class="p-0 m-0" >
-            <span class="texts-primary" >Home</span>
-            |
-            <span>{{ $navcontent }}</span>
+            <h5 class="texts-primary" >{{ $navcontent }}</h5>
         </h6>
     </div>
 

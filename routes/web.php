@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ArticleDetailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LayoutController;
@@ -21,13 +22,16 @@ use App\Http\Controllers\LayoutController;
 // });
 
 
-Route::get('/', function () {
+// Route::get('/', function () {
 
-    $page = 'home';
-    $navcontent = '';
+//     $page = 'home';
+//     $navcontent = '';
 
-    return view('layout.content.home', compact('page', 'navcontent'));
-});
+//     return view('layout.content.home', compact('page', 'navcontent'));
+// });
+
+Route::get('/', [HomeController::class, 'index']);
+
 
 Route::get('/add', function () {
 
@@ -74,3 +78,7 @@ Route::get('/tpa', function () {
 
 
 Route::post('/create', [ArticleController::class, 'add']);
+
+Route::get('/article/{id}',[ArticleDetailController::class, 'index']);
+
+

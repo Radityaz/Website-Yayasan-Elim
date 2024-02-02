@@ -67,7 +67,32 @@
             </div>
         </div>
     </div>
-    <section class="container p-5 vh-100 overflow-hidden">
+    <section class="container mb-5">
+        <div class="row h-75 gx-4">
+            @foreach ($post as $article)
+                <div class="col-3 py-4" style="height: 350px" >
+                    <div class="container w-100 h-100 p-0 bg-light shadow-sm" style="border-radius: 8px;">
+                        <div style="height: 50%; background-image: url('{{ 'storage/' . $article->image }}'); border-radius: 8px 8px 0px 0px" class="image-container">
+                        </div>
+                        <div style="height: 50%" class="box p-2 d-flex flex-column justity-content-between">
+                            <p class="m-1 font-xs" style="font-family: nunito">{{ $article->date }}</p>
+                            <p class="m-1 font-s h-100">{{ $article->title }}</p>
+                            <a href="/article/{{ $article->id }}">
+                                <button class="btn mt-2 w-100 font-s btn-outline-primary">Selengkapnya</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <div class="d-flex justify-content-center m-0" style="height: 6vh" >
+            <a href="/article">
+                <button class="btn px-5 bgs-primary font-s rounded-pill" >Selengkapnya</button> 
+            </a>
+        </div>
+    </section>
+
+    {{-- <section class="container p-5 vh-100 overflow-hidden">
         <h2 class="ps-4 m-0" >Artikel</h2>
         <div class="row h-75 m-0 gx-5">
             <div class="col-4 py-4" sty >
@@ -107,7 +132,7 @@
         <div class="container d-flex justify-content-center" style="height: 6vh" >
             <button class="btn px-5 bgs-primary font-s rounded-pill" >Selengkapnya</button> 
         </div>
-    </section>
+    </section> --}}
     <section class="container-fluid overflow-hidden">
         <div class="row" style="height: 70vh" >
             <div class="col-6 front-background ">
