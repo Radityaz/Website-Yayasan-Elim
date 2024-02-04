@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand p-0 " href="/">
-          <img class="p-0 m-0" src="/image/logo.png"  width=60" height="55">
+          <img class="p-0 m-0 hover-grow" src="/image/logo.png"  width=60" height="55">
         </a>
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto ">
@@ -23,13 +23,16 @@
               <a class="nav-link font-s hover-grow" href="/">Beranda</a>
             </li>
             <li class="nav-item {{ $page == "about" ? 'navbar-active' : 'navbar-nonactive'; }} ">
-              <a class="nav-link font-s " href="/about">Tentang Kami</a>
+              <a class="nav-link font-s hover-grow" href="/about">Tentang Kami</a>
+            </li>
+            <li class="nav-item {{ $page == "galery" ? 'navbar-active' : 'navbar-nonactive'; }} " >
+              <a class="nav-link font-s hover-grow" href="/">Galeri</a>
             </li>
             <li class="nav-item {{ $page == "article" ? 'navbar-active' : 'navbar-nonactive'; }} " >
-              <a class="nav-link font-s " href="/article">Artikel</a>
+              <a class="nav-link font-s hover-grow" href="/article">Artikel</a>
             </li>
             <li class="nav-item dropdown {{ $page == "place" ? 'navbar-active' : 'navbar-nonactive'; }} ">
-              <a class="nav-link font-s  dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link font-s hover-grow dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Tempat
               </a>
               <ul class="dropdown-menu">
@@ -46,7 +49,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand p-0 " href="/article">
-          <img class="p-0 m-0" src="/image/back.png"  width="30">
+          <img class="p-0 m-0 hover-grow " src="/image/back.png"  width="30">
         </a>
         <div class="collapse navbar-collapse justify-content-center text-black" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -102,17 +105,17 @@
                 yayasan elim
               </h6>
             </div>
-            <div class="d-flex align-items-start justify-content-start w-100 my-2" >
+            <div class="d-flex align-items-start justify-content-start w-100 my-2 hover-grow-small " >
               <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="/sd" style="font-family: nunito"  >
                 Tentang Sd
               </a>
             </div>
-            <div class="d-flex align-items-start justify-content-start w-100 my-2" >
+            <div class="d-flex align-items-start justify-content-start w-100 my-2 hover-grow-small " >
               <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="/kb" style="font-family: nunito"  >
                 Tentang KB
               </a>
             </div>
-            <div class="d-flex align-items-start justify-content-start w-100 my-2" >
+            <div class="d-flex align-items-start justify-content-start w-100 my-2 hover-grow-small " >
               <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="/tpa" style="font-family: nunito"  >
                 Tentang tpa
               </a>
@@ -120,27 +123,27 @@
           </div>
           <div class="col-4 text-uppercase d-flex flex-column align-items-start justify-content-start p-0 m-0 ps-2 ">
             <div class="d-flex align-items-center justify-content-start w-100" style="height: 40px" >
-              <h6 class="p-0 m-0 ms-2 text-capitalize " >
+              <h6 class="p-0 m-0 ms-2 text-uppercase " >
                 SITE Link
               </h6>
             </div>
-            <div class="d-flex align-items-start justify-content-start w-100 my-2" >
-              <a class="p-0 m-0 ms-2 text-capitalize font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
+            <div class="d-flex align-items-start justify-content-start w-100 my-2 hover-grow-small " >
+              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
                 Instagram SD
               </a>
             </div>
-            <div class="d-flex align-items-start justify-content-start w-100 my-2" >
-              <a class="p-0 m-0 ms-2 text-capitalize font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
+            <div class="d-flex align-items-start justify-content-start w-100 my-2 hover-grow-small " >
+              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
                 Instagram KB
               </a>
             </div>
-            <div class="d-flex align-items-start justify-content-start w-100 my-2" >
-              <a class="p-0 m-0 ms-2 text-capitalize font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
+            <div class="d-flex align-items-start justify-content-start w-100 my-2 hover-grow-small " >
+              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
                 Youtube SD
               </a>
             </div>
-            <div class="d-flex align-items-start justify-content-start w-100 my-2" >
-              <a class="p-0 m-0 ms-2 text-capitalize font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
+            <div class="d-flex align-items-start justify-content-start w-100 my-2 hover-grow-small " >
+              <a class="p-0 m-0 ms-2 text-uppercase font-s text-decoration-none text-white" href="#" style="font-family: nunito"  >
                 Youtube KB
               </a>
             </div>

@@ -3,10 +3,15 @@
     <div class="container-fluid mt-5">
         <div class="row vh-100">
             <div class=" offset-1 col-5 d-flex flex-column align-items-start justify-content-center">
-                <h1 class="font-hero" >Great School</h1>
-                <h1>For The Best Student</h1>
-                <p class="font-xs w-75 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <button class="btn font-s text-start rounded-button rounded-pill bgs-primary " style="width: 30%" > Baca Lebih Lanjut </button>
+                <h1 class="display-1" style="font-family: nunito-extrabold; color: #2252AB" >Great School</h1>
+                <h1 class="display-5" style="font-family: nunito-extrabold; color: #FCAF45" >For The Best Student</h1>
+                <p class="font-s w-100 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <button class="btn font-s text-start hover-grow d-flex justify-content-between align-items-center rounded-button rounded-pill bgs-primary " style="width: 30%" > 
+                    Baca Lebih Lanjut 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                </button>
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end p-0 m-0">
                 <img height="620" width="620" src="/image/HeroBackground.png"alt="" srcset="">
@@ -27,8 +32,8 @@
                 <div class="w-100 h-100 bg-light" style="padding: 10%; border-radius: 6px;" >
                     <h6 class="p-0 m-0" >Jenjang Pendidikan</h6>
                     <hr class="my-2" style="width: 20%" >
-                    <h5>YAYASAN <br>ELIM KUDUS</h5>
-                    <p style="font-family: nunito" class="font-s" >Jenjang Pendidikan Yayasan Elim. SD,KB & TPA</p>
+                    <h5 style="font-family: nunito-extrabold" >YAYASAN <br> <span style="color: #2472AF; font-family: nunito-extrabold" >ELIM KUDUS</span></h5>
+                    <p style="font-family: nunito" class="font-m" >Jenjang Pendidikan Yayasan Elim. SD,KB & TPA</p>
                 </div>
             </div>
             <div class="col-6" style="padding: 5%; box-sizing: border-box;">
@@ -40,7 +45,11 @@
                         <div class="col-10 p-0 ps-3 d-flex flex-column justify-content-center ">
                             <h5 class="p-0 m-0" >SD</h5>
                             <p class="py-1 font-xs p-0 m-0" >Sekolah SD Widya Kirana Kudus</p>
-                            <a class="font-xxs text-decoration-none" href="/sd">Selengkapnya</a>
+                            <a class="font-xxs text-decoration-none hover-grow-small " href="/sd">Selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <div class="row shadow-sm bg-light h-25 p-3 m-0" style="border-radius: 6px;"  >
@@ -50,7 +59,11 @@
                         <div class="col-10 p-0 ps-3 d-flex flex-column justify-content-center ">
                             <h5 class="p-0 m-0" >KB</h5>
                             <p class="py-1 font-xs p-0 m-0" >Sekolah KB Firdaus Kudus</p>
-                            <a class="font-xxs text-decoration-none" href="/kb">Selengkapnya</a>
+                            <a class="font-xxs text-decoration-none hover-grow-small " href="/kb">Selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <div class="row shadow-sm bg-light h-25 p-3 m-0" style="border-radius: 6px;"  >
@@ -60,7 +73,11 @@
                         <div class="col-10 p-0 ps-3 d-flex flex-column justify-content-center ">
                             <h5 class="p-0 m-0" >TPA</h5>
                             <p class="py-1 font-xs p-0 m-0" >Sekolah TPA Moms Care Kudus</p>
-                            <a class="font-xxs text-decoration-none" href="/tpa">Selengkapnya</a>
+                            <a class="font-xxs text-decoration-none hover-grow-small " href="/tpa">Selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -69,6 +86,7 @@
     </div>
     <section class="container mb-5">
         <div class="row h-75 gx-4">
+            <h3 class="text-uppercase m-0 mt-5" style="font-family: nunito-extrabold" >Artikel</h3>
             @foreach ($post as $article)
                 <div class="col-3 py-4" style="height: 350px" >
                     <div class="container w-100 h-100 p-0 bg-light shadow-sm" style="border-radius: 8px;">
@@ -78,7 +96,7 @@
                             <p class="m-1 font-xs" style="font-family: nunito">{{ $article->date }}</p>
                             <p class="m-1 font-s h-100">{{ $article->title }}</p>
                             <a href="/article/{{ $article->id }}">
-                                <button class="btn mt-2 w-100 font-s btn-outline-primary">Selengkapnya</button>
+                                <button class="btn mt-2 w-100 font-s btn-outline-primary">Lihat Selengkapnya</button>
                             </a>
                         </div>
                     </div>
@@ -87,7 +105,7 @@
         </div>
         <div class="d-flex justify-content-center m-0" style="height: 6vh" >
             <a href="/article">
-                <button class="btn px-5 bgs-primary font-s rounded-pill" >Selengkapnya</button> 
+                <button class="btn px-5 bgs-primary font-s rounded-pill hover-grow" style="height: 40px" >Selengkapnya</button> 
             </a>
         </div>
     </section>
