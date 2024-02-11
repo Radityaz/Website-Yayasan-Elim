@@ -11,7 +11,8 @@ class ArticleController extends Controller
 
     public function index (Request $request) {
 
-        $post = Articletable::all();
+        // $post = Articletable::all();
+        $post = ArticleTable::where('status', 'Public')->get();  
         $page = 'article';
         $navcontent = 'Artikel';
     
@@ -47,6 +48,32 @@ class ArticleController extends Controller
     
     
         return redirect('/add')->with('success', 'Data berhasil ditambahkan!');
+
+    }
+
+    public function search(Request $request) {
+
+        $page = 'article';
+        $navcontent = 'Artikel';
+        // $searchinput = $request->input('search');
+
+        // $post = Articletable::query();
+
+        // if ($searchinput) {
+        //     $post->where('title', 'like', '%' . $searchinput . '%');
+        // }
+        
+
+        // dd($post->where('title', 'like', '%' . $searchinput . '%'));
+        
+        // // $post = $post->where('id', session('id'))->get();
+        // return view('layout.content.article', compact(['post','page','navcontent']));
+
+        $term = $request->input('search');
+
+        $post = Articletable::search($term)->get();
+    
+        return view('layout.content.article', compact('post','page','navcontent'));
 
     }
 

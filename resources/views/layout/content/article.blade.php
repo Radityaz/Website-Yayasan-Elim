@@ -1,11 +1,21 @@
 @extends('layout.main')
 @section('content')
-<section class="container p-5  overflow-hidden">
+<section class="container p-5 overflow-hidden">
+        <form action="/article/search" method="get">
+            <div class="row m-0 gx-4" style="height: 40px;" >
+                <div class="col-10">
+                    <input class="w-100 h-100 ps-2" name="search" placeholder="Search Here..." type="text">
+                </div>
+                <div class="col-2" >
+                    <button class="w-100 h-100" type="submit" >Search</button>
+                </div>
+            </div>
+        </form>
         <div class="row h-75 m-0 gx-4">
             @foreach ($post as $article)
                 <div class="col-3 py-4" style="height: 350px" >
                     <div class="container w-100 h-100 p-0 bg-light shadow-sm" style="border-radius: 8px;">
-                        <div style="height: 50%; background-image: url('{{ 'storage/' . $article->image }}'); border-radius: 8px 8px 0px 0px" class="image-container">
+                        <div style="height: 50%; background-image: url('{{ asset('storage/' . $article->image) }}'); border-radius: 8px 8px 0px 0px" class="image-container">
                         </div>
                         <div style="height: 50%" class="box p-2 d-flex flex-column justity-content-between">
                             <p class="m-1 font-xs" style="font-family: nunito">{{ $article->date }}</p>
