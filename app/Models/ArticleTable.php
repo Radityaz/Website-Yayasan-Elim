@@ -16,4 +16,9 @@ class Articletable extends Model
         $query->where('title', 'LIKE', "%{$term}%");
     }
 
+    public function articleImage()
+    {
+        return $this->hasOne(ArticleImage::class, 'id');
+    }
+
 }

@@ -15,7 +15,7 @@
             @foreach ($post as $article)
                 <div class="col-3 py-4" style="height: 350px" >
                     <div class="container w-100 h-100 p-0 bg-light shadow-sm" style="border-radius: 8px;">
-                        <div style="height: 50%; background-image: url('{{ asset('storage/' . $article->image) }}'); border-radius: 8px 8px 0px 0px" class="image-container">
+                        <div style="height: 50%; background-image: url('{{ asset('storage/' . $article->ArticleImage->image) }}'); border-radius: 8px 8px 0px 0px; background-position: {{ $article->ArticleImage->x_offset * 0.65 }}px {{ $article->ArticleImage->y_offset * 0.7 }}px; background-size:{{ $article->ArticleImage->size }}%;" class="image-container">
                         </div>
                         <div style="height: 50%" class="box p-2 d-flex flex-column justity-content-between">
                             <p class="m-1 font-xs" style="font-family: nunito">{{ $article->date }}</p>

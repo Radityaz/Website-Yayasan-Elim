@@ -25,9 +25,6 @@
             <li class="nav-item {{ $page == "about" ? 'navbar-active' : 'navbar-nonactive'; }} ">
               <a class="nav-link font-s hover-grow" href="/about">Tentang Kami</a>
             </li>
-            <li class="nav-item {{ $page == "galery" ? 'navbar-active' : 'navbar-nonactive'; }} " >
-              <a class="nav-link font-s hover-grow" href="/">Galeri</a>
-            </li>
             <li class="nav-item {{ $page == "article" ? 'navbar-active' : 'navbar-nonactive'; }} " >
               <a class="nav-link font-s hover-grow" href="/article">Artikel</a>
             </li>
