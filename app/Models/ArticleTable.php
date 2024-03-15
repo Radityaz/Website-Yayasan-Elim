@@ -11,4 +11,14 @@ class Articletable extends Model
     protected $table = 'article';
     protected $fillable = ['title','author','image','content','date'];
 
+    public function scopeSearch($query, $term)
+    {
+        $query->where('title', 'LIKE', "%{$term}%");
+    }
+
+    public function articleImage()
+    {
+        return $this->hasOne(ArticleImage::class, 'id');
+    }
+
 }

@@ -33,13 +33,13 @@ use App\Http\Controllers\LayoutController;
 Route::get('/', [HomeController::class, 'index']);
 
 
-Route::get('/add', function () {
+// Route::get('/add', function () {
 
-    $page = '';
-    $navcontent = 'Tambah Data';
+//     $page = '';
+//     $navcontent = 'Tambah Data';
 
-    return view('layout.content.add', compact('page','navcontent'));
-});
+//     return view('layout.content.add', compact('page','navcontent'));
+// });
 
 
 Route::get('/about', function () {
@@ -51,6 +51,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/article', [ArticleController::class, 'index']);
+Route::get('/article/search', [ArticleController::class, 'search']);
 
 Route::get('/sd', function () {
 

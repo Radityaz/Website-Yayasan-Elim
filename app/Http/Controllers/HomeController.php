@@ -9,7 +9,8 @@ use Illuminate\Routing\Controller;
 class HomeController extends Controller
 {
     public function index (Request $request) {
-        $post = Articletable::all();
+        // $post = Articletable::all();
+        $post = Articletable::inRandomOrder()->take(4)->get();
         $page = 'home';
         $navcontent = '';
     

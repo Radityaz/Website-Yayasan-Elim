@@ -17,34 +17,28 @@
         <a class="navbar-brand" href="/">
             <img src="/image/logo.png" width="60" height="55" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item {{ $page == "home" ? 'active' : '' }}">
-                    <a class="nav-link" href="/">Beranda</a>
-                </li>
-                <li class="nav-item {{ $page == "about" ? 'active' : '' }}">
-                    <a class="nav-link" href="/about">Tentang Kami</a>
-                </li>
-                <li class="nav-item {{ $page == "galery" ? 'active' : '' }}">
-                    <a class="nav-link" href="/">Galeri</a>
-                </li>
-                <li class="nav-item {{ $page == "article" ? 'active' : '' }}">
-                    <a class="nav-link" href="/article">Artikel</a>
-                </li>
-                <li class="nav-item dropdown {{ $page == "place" ? 'active' : '' }}">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Tempat
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="/sd">SD Widya Kirana</a></li>
-                        <li><a class="dropdown-item" href="/kb">KB Firdaus</a></li>
-                        <li><a class="dropdown-item" href="/tpa">TPA</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item {{ $page == "home" ? 'navbar-active' : 'navbar-jnonactive'; }} ">
+              <a class="nav-link font-s hover-grow" href="/">Beranda</a>
+            </li>
+            <li class="nav-item {{ $page == "about" ? 'navbar-active' : 'navbar-nonactive'; }} ">
+              <a class="nav-link font-s hover-grow" href="/about">Tentang Kami</a>
+            </li>
+            <li class="nav-item {{ $page == "article" ? 'navbar-active' : 'navbar-nonactive'; }} " >
+              <a class="nav-link font-s hover-grow" href="/article">Artikel</a>
+            </li>
+            <li class="nav-item dropdown {{ $page == "place" ? 'navbar-active' : 'navbar-nonactive'; }} ">
+              <a class="nav-link font-s hover-grow dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tempat
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item {{ $navcontent == "SD Widya Kirana" ? 'bgs-primary' : ''; }}  " href="/sd">SD Widya Kirana</a></li>
+                <li><a class="dropdown-item {{ $navcontent == "KB Firdaus" ? 'bgs-primary' : ''; }} " href="/kb">KB Firdaus</a></li>
+                <li><a class="dropdown-item {{ $navcontent == "TPA Mom's Care" ? 'bgs-primary' : ''; }} " href="/tpa">TPA</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
     </div>
 </nav>
