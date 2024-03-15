@@ -1,6 +1,18 @@
 @extends('layout.main')
 @section('content')
 <section class="container p-5 overflow-hidden">
+    <div class="row h-75 m-0 gx-4">
+        @foreach ($post as $article)
+        <div class="col-lg-3 col-md-4 col-sm-6 py-4">
+            <div class="container w-100 p-0 bg-light shadow-sm" style="border-radius: 8px;">
+                <div style="background-image: url('{{ 'storage/' . $article->image }}'); border-radius: 8px 8px 0px 0px; height: 200px;" class="image-container">
+                </div>
+                <div class="box p-3">
+                    <p class="m-1 font-xs" style="font-family: nunito">{{ $article->date }}</p>
+                    <p class="m-1 font-s">{{ $article->title }}</p>
+                    <a href="/article/{{ $article->id }}">
+                        <button class="btn mt-2 w-100 font-s btn-outline-primary">Selengkapnya</button>
+                    </a>
         <form action="/article/search" method="get">
             <div class="row m-0 gx-4" style="height: 40px;" >
                 <div class="col-10">
@@ -26,9 +38,11 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+            </div>
         </div>
-            {{-- <div class="col-4 py-4" style="height: 450px" >
+        @endforeach
+    </div>
+    {{-- <div class="col-4 py-4" style="height: 450px" >
                 <div class="container w-100 h-100 p-0 bg-light" style="border-radius: 8px; border: 1.5px solid #4f4f4f ">
                     <div style="height: 60%; background-image: url('image/samplefoto.png'); border-radius: 8px 8px 0px 0px  " class="image-container">
                     </div>
@@ -50,6 +64,5 @@
                     </div>
                 </div>
             </div> --}}
-        </div>
-    </section>
+</section>
 @endsection

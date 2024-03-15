@@ -1,94 +1,65 @@
 @extends('layout.main')
 @section('content')
-    <div class="container-fluid background-kb-photo d-flex flex-column text-light vh-100 mb-5" >
-        <img height="200px" src="/image/kbfirdaus.png" alt="" srcset="">
-        <h1 class="display-1" >
-            KB Firdaus
-        </h1>
-        <p class="w-25 text-center font-s" style="font-family: nunito"  >
-            Berikut adalah galeri kegiatan kami
-        </p>
-        <hr style="width: 50px; border: 3px solid orange ; opacity: 100%" >
+<div class="container-fluid background-kb-photo d-flex flex-column text-light vh-100 mb-5">
+    <img src="/image/kbfirdaus.png" class="img-fluid" alt="KB Firdaus Image">
+    <h1 class="display-1 text-center mt-3 mb-0">KB Firdaus</h1>
+    <p class="text-center font-s mt-2 mb-3">Berikut adalah galeri kegiatan kami</p>
+    <hr class="mx-auto mb-4" style="width: 50px; border: 3px solid orange;">
+</div>
+<section class="container-fluid overflow-hidden">
+    <div class="row">
+        <div class="col-md-6 front-tpa-background"></div>
+        <div class="col-md-6 p-5 d-flex flex-column align-items-start justify-content-center">
+            <div class="box mb-5">
+                <h4 class="texts-primary">Partner School</h4>
+                <p style="font-family: nunito;" class="font-s">
+                Oakbridge International School, Malaysia. Oakbridge International School Phnom Penh, Cambodia. Oakbridge Sekolah National Plus Tarjun, Indonesia. Iseed Integrated Scool, Kelapa Gading, Jakarta Utara. Mawar Sharon Christian School, Kelapa Gading, Jakarta Utara. Kingdom School Pekalongan, Indonesia. Chosen Generation Academy, Banjarmasin
+                </p>
+            </div>
+            <div class="box">
+                <h4 class="texts-primary">Learning Benefits</h4>
+                <p style="font-family: nunito;" class="font-s">
+                    1. Bahasa pengantar Bahasa Inggris
+                    <br>
+                    2. Pembelajaran dilaksanakan secara fullday
+                    <br>
+                    3. Siswa dibelaki keterampilan abad 21 (STEM)
+                    <br>
+                    4. Siswa lulus memperoleh 2 (dua) Ijazah, yaitu : Ijazah Nasional dan Internasional (Oakbridge International School, Malaysia)
+                    <br>
+                </p>
+            </div>
+        </div>
     </div>
-    <section class="container-fluid overflow-hidden">
-        <div class="row" style="height: 70vh" >
-            <div class="col-6 front-kb-background ">
+</section>
 
+
+<section class="container overflow-hidden mt-5">
+    <div class="row">
+        <div class="col-md-6 p-5 d-flex flex-column align-items-start justify-content-center">
+            <div class="box mb-5">
+                <h4 class="texts-primary">Visi</h4>
+                <p style="font-family: nunito;" class="font-s">
+                    “BERKARAKTER DAN MENJADI TERANG”
+                </p>
             </div>
-            <div class="col-6 p-5 d-flex flex-column align-items-start justify-content-center">
-                <div class="box mb-5 ">
-                    <h4 class="texts-primary" >
-                        Visi
-                    </h4>
-                    <p style="font-family: nunito;" class="font-s" >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun
-                    </p>
-                </div>
-                <div class="box">
-                    <h4 class="texts-primary" >
-                        Misi
-                    </h4>
-                    <p style="font-family: nunito;" class="font-s w-50 " >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolost laborum.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container overflow-hidden " style="margin-top: 5%" >
-        <div class="row" >
-            <div class="col-6 py-5 d-flex flex-column align-items-start justify-content-center">
-                <div class="box mb-5 ">
-                    <h4 class="texts-primary" >
-                        Visi
-                    </h4>
-                    <p style="font-family: nunito;" class="font-s" >
-                        “GEMILANG: BERGERAK MERAIH MIMPI CEMERLANG”
-                    </p>
-                </div>
-                <div class="box">
-                    <h4 class="texts-primary" >
-                        Misi
-                    </h4>
-                    <p style="font-family: nunito;" class="font-s w-75 " >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                        <br>
-                        <br>
-                    </p>    
-                </div>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-center">
-                <img height="650px" src="/image/image-kb-2.png" alt="" srcset="">
+            <div class="box">
+                <h4 class="texts-primary">Misi</h4>
+                <p style="font-family: nunito;" class="font-s">
+                    1. Anak Didik memiliki karakter Beriman, Kasih, Ceria, Mandiri, Jujur, Kritis dan Disiplin
+                    <br>
+                    2. Anak Didik dapat menjadi Berkat dan Teladan bagi orang tua serta lingkungan sekitar
+                    <br>
+                    3. Anak didik mampu berinteraksi maupun bersosialisasi dengan lingkungan dan menjadikannya sebagai kekuatan anak dalam mencapai prestasi bagi masa depannya
+                    <br>
+                    4. Anak menjadi pribadi yang bernilai bagi lingkungannya
+                    <br>
+                </p>
             </div>
         </div>
-    </section>
-    <section class="container overflow-hidden " style="margin-top: 5% ; margin-bottom: 5% " >
-        <div class="row" >
-            <div class="col-6 px-5 d-flex align-items-center justify-content-start">
-                <img class="" height="550px" src="/image/image-kb-background.png" alt="" srcset="">
-            </div>
-            <div class="col-6 d-flex flex-column align-items-start justify-content-end">
-                <div class="box mt-5 p-5 h-100 w-100" style="background-color: #c4e2ff" >
-                    <h4 class="texts-primary">
-                        Kurikulum <br> Pendidikan OakBridge
-                    </h4>
-                    <p style="font-family: nunito;" class="w-75" >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="/image/image-kb-3.png" alt="" style="max-height: 650px; margin-bottom: 110px;">
         </div>
-    </section>
+    </div>
+</section>
 @endsection
