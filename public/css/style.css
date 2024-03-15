@@ -105,7 +105,7 @@ body, nav {
 
 /* === ONE TIME USE === */
 .background-photo {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 124, 214, 0.39) 0%, rgba(0, 124, 214, 0.39) 100%), url('/image/TogetherBackground.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 124, 214, 0.39) 0%, rgba(0, 124, 214, 0.39) 100%), url('/image/background-yayasan.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,22 +122,27 @@ body, nav {
 }
 
 .front-background {
-    background: url('/image/frontview.png'), lightgray 0px 0px / 100% 100% no-repeat;
+    background: url('/image/image-sd-background.png'), lightgray 0px 0px / 100% 100% no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .front-kb-background {
-    background: url('/image/image-kb-1.png');
-    background-position: -265px;
+    background: url('/image/tpabg2.jpg');
+    background-position: -250px;
     background-size: 150%;
     background-repeat: no-repeat;
 }
-
+.front-tpa-background {
+    background: url('/image/image-kb-1.png');
+    background-position: -250px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
 .front-kb-backgrounds {
     background: linear-gradient(0deg, rgba(1, 104, 185, 0.43) 0%, rgba(1, 104, 185, 0.43) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/image-kb-1.png"), lightgray 50% / cover no-repeat;
     background-position: -360px;
-    background-size: 150%;
+    background-size: 200%;
     background-repeat: no-repeat;
 }
 
@@ -148,7 +153,7 @@ body, nav {
 }
 
 .background-sd-photo {
-    background: linear-gradient(0deg, rgba(1, 104, 185, 0.43) 0%, rgba(1, 104, 185, 0.43) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/image-sd-background.png"), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(1, 104, 185, 0.43) 0%, rgba(1, 104, 185, 0.43) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/frontview.png"), lightgray 50% / cover no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,7 +162,7 @@ body, nav {
 }
 
 .background-tpa-photo {
-    background: linear-gradient(0deg, rgba(1, 104, 185, 0.43) 0%, rgba(1, 104, 185, 0.43) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(""), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(1, 104, 185, 0.43) 0%, rgba(1, 104, 185, 0.43) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/tpabg4.jpg"), lightgray 50% / cover no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +172,7 @@ body, nav {
 
 
 .background-kb-photo {
-    background: linear-gradient(0deg, rgba(1, 104, 185, 0.23) 0%, rgba(1, 104, 185, 0.23) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/image-kb-1.png"), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(1, 104, 185, 0.23) 0%, rgba(1, 104, 185, 0.23) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("/image/kb-front-image.jpg"), lightgray 50% / cover no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,6 +203,7 @@ body, nav {
     transform: scale(1.02);
 }
 
+
 /* === scrollbar Property === */
 
 ::-webkit-scrollbar {
@@ -212,3 +218,6 @@ body, nav {
 ::-webkit-scrollbar-track {
     background-color: transparent; /* Warna track (bagian yang tidak terisi) */
   }
+
+  
+
