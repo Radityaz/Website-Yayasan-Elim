@@ -7,6 +7,7 @@
     <title>Website Yayasan Elim</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cross.css">
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -54,8 +55,9 @@
         </a>
         <div class="collapse navbar-collapse justify-content-center text-black" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item {{ $page == "home" ? 'active' : '' }}">
-                    <a class="nav-link">{{ $article->title }}</a>
+                <li class="nav-item text-center">
+                    <a class="nav-link m-0 p-0">{{ $article->title }}</a>
+                    <p class="text-muted m-0 p-0" style="font-size: 12px" >Ditulis oleh {{ $article->author }}</p>
                 </li>
             </ul>
         </div>

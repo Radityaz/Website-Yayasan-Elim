@@ -1,0 +1,54 @@
+par {
+    display: block;
+    padding-top: 10px;
+}
+
+par-title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+par-sub {
+    display: block;
+    font-size: 17px;
+
+}
+
+par-con {
+    display: block;
+    color: gray;
+    font-size: 14px;
+
+}
+
+par-ext {
+    display: block;
+    color: gray;
+    font-size: 11px;
+
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.block {
+    color: black;
+}
+
+.muted {
+    color: gray;
+}

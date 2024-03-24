@@ -116,14 +116,14 @@
         <h3 class="text-uppercase m-0 mt-5" style="font-family: nunito-extrabold">Artikel</h3>
         @foreach ($post as $article)
         <div class="col-lg-3 col-md-4 col-sm-6 py-4">
-            <div class="container w-100 p-0 bg-light shadow-sm" style="border-radius: 8px; height: 250px;">
-                <div style="height: 50%; background-image: url('{{ 'storage/' . $article->image }}'); border-radius: 8px 8px 0px 0px" class="image-container">
+            <div class="container w-100 p-0 bg-light shadow-sm" style="border-radius: 8px;">
+                <div style="background-image: url('{{ 'storage/' . $article->ArticleImage->image }}'); border-radius: 8px 8px 0px 0px; height: 155px;  background-position: {{ $article->ArticleImage->x_offset * 0.65 }}px {{ $article->ArticleImage->y_offset * 0.7 }}px; background-size:{{ $article->ArticleImage->size }}%;" class="image-container">
                 </div>
-                <div style="height: 50%;" class="box p-2 d-flex flex-column justify-content-between">
+                <div class="box p-2">
                     <p class="m-1 font-xs" style="font-family: nunito">{{ $article->date }}</p>
-                    <p class="m-1 font-s flex-grow-1">{{ $article->title }}</p>
+                    <p class="m-1 font-s">{{ $article->title }}</p>
                     <a href="/article/{{ $article->id }}">
-                        <button class="btn mt-2 w-100 font-s btn-outline-primary">Lihat Selengkapnya</button>
+                        <button class="btn mt-2 w-100 font-s btn-outline-primary">Selengkapnya</button>
                     </a>
                 </div>
             </div>

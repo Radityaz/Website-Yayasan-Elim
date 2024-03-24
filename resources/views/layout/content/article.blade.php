@@ -2,13 +2,13 @@
 
 @section('content')
     <section class="container p-5 overflow-hidden">
-        <div class="row h-75 m-0 gx-4">
+        <div class="row m-0 gx-4">
             @foreach ($post as $article)
                 <div class="col-lg-3 col-md-4 col-sm-6 py-4">
                     <div class="container w-100 p-0 bg-light shadow-sm" style="border-radius: 8px;">
-                        <div style="background-image: url('{{ 'storage/' . $article->ArticleImage->image }}'); border-radius: 8px 8px 0px 0px; height: 200px;  background-position: {{ $article->ArticleImage->x_offset * 0.65 }}px {{ $article->ArticleImage->y_offset * 0.7 }}px; background-size:{{ $article->ArticleImage->size }}%;" class="image-container">
+                        <div style="background-image: url('{{ 'storage/' . $article->ArticleImage->image }}'); border-radius: 8px 8px 0px 0px; height: 155px;  background-position: {{ $article->ArticleImage->x_offset * 0.65 }}px {{ $article->ArticleImage->y_offset * 0.7 }}px; background-size:{{ $article->ArticleImage->size }}%;" class="image-container">
                         </div>
-                        <div class="box p-3">
+                        <div class="box p-2">
                             <p class="m-1 font-xs" style="font-family: nunito">{{ $article->date }}</p>
                             <p class="m-1 font-s">{{ $article->title }}</p>
                             <a href="/article/{{ $article->id }}">
@@ -17,6 +17,7 @@
                         </div>
                     </div>
                 </div>
+                
             @endforeach
         </div>
         {{-- <form action="/article/search" method="get">
